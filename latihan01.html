@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Jquery 01</title>
+</head>
+<body>
+
+    <h3>Judul</h3>
+    <div id="Tampil1">Isi Dari Tampil 1</div>
+    <div class="Tampil1">Isi Dari Class Tampil 1</div>
+
+    <p>Isi Paragraph</p>
+    <div id="Hari">Ini</div>
+    <div class="Hari">Selasa</div>
+
+    <script src="jquery-3.7.0.min.js"></script>
+    <script>
+        //document.getElementById("Tampil").innerHTML="Teks Baru";
+
+        $(document).ready(function(){
+            $("#Tampil1").html("Teks Yang Baru Untuk Element Id");
+            $(".Tampil1").html("Teks Pengganti Element Class");
+            $("h3").html("Belajar");
+            $("#Hari").html("Belajar Jquery");
+            $(". Hari").html("Isi apa");
+        });
+    </script>
+</body>
+</html>
